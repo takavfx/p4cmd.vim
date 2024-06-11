@@ -22,26 +22,3 @@ export async function revert(denops: Denops): Promise<void> {
   let response = await denops.cmd(`!p4 revert ${currentFile}`);
   // console.log(response);
 }
-
-export async function submit(
-  denops: Denops,
-  changelist: number,
-): Promise<void> {
-  let response = await denops.cmd(`!p4 submit -c ${changelist}`);
-  console.log(response);
-}
-
-export async function changelist(denops: Denops): Promise<number> {
-  let response = await denops.cmd("!p4 changelist -o");
-  let changelist = response.match(/Change:\s+(\d+)/);
-  if (changelist) {
-    return parseInt(changelist[1]);
-  } else {
-    return -1;
-  }
-}
-
-export async function sync(denops: Denops): Promise<void> {
-  let response = await denops.cmd("!p4 sync");
-  console.log(response);
-}

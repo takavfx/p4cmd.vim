@@ -1,5 +1,5 @@
-import { batch, Denops, exec } from "./deps.ts";
-import { add, edit, info } from "./perforce.ts";
+import { batch, Denops } from "./deps.ts";
+import { add, edit, info, revert } from "./perforce.ts";
 
 export function main(denops: Denops): void {
   denops.dispatcher = {
@@ -32,6 +32,10 @@ export function main(denops: Denops): void {
 
     async edit(args) {
       edit(denops);
+    },
+
+    async revert(args) {
+      revert(denops);
     },
   };
 }
