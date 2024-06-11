@@ -1,0 +1,33 @@
+*p4cmd.vim* Perforce Command support for vim.
+
+Author: Takanori Kishikawa <auratus.lemma@gmail.com>
+License: MIT license
+
+=============================================================================
+CONTENT                                     *p4cmd.vim*
+
+INTRODUCTION                              |p4cmd-introduction|
+AUTOCMD                                   |p4cmd-autocmd|
+=============================================================================
+INTRODUCTION                                *p4cmd-introduction*
+
+*p4cmd.vim* is a supoprt tool to access Perforce commands.
+
+=============================================================================
+AUTOCMD                                     *p4cmd-autocdm*
+
+P4Info                                      P4Info
+  Show the information of the current client info.
+
+P4Add                                       P4Add
+  Add the current file.
+
+P4Edit                                      P4Edit
+  Edit the current file.
+
+P4Revert                                    P4Revert
+  Revert the current file.
+
+
+=============================================================================
+vim:tw=78:ts=8:ft=help:norl:
