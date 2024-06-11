@@ -15,9 +15,14 @@ export function main(denops: Denops): void {
           `command! -nargs=0 P4Add call denops#request('${denops.name}', 'add', [])`,
         );
 
+        // P4Edit
+        await denops.cmd(
+          `command! -nargs=0 P4Edit call denops#request('${denops.name}', 'edit', [])`,
+        );
+
         // P4Revert
         await denops.cmd(
-          `command! -nargs=0 P4Add call denops#request('${denops.name}', 'add', [])`,
+          `command! -nargs=0 P4Revert call denops#request('${denops.name}', 'revert', [])`,
         );
       });
     },
