@@ -1,4 +1,4 @@
-*p4cmd.vim* Perforce Command support for vim.
+*p4cmd.vim* Perforce (Helix Core) Command support for vim.
 
 Author: Takanori Kishikawa <auratus.lemma@gmail.com>
 License: MIT license
@@ -11,7 +11,10 @@ AUTOCMD                                   |p4cmd-autocmd|
 =============================================================================
 INTRODUCTION                                *p4cmd-introduction*
 
-*p4cmd.vim* is a supoprt tool to access Perforce commands.
+*p4cmd.vim* is a supoprt tool to access Perforce (Helix Core) commands.
+
+You have to install P4 Command-Line Client (p4) to use this plugin.
+https://www.perforce.com/products/helix-core-apps/command-line-client
 
 =============================================================================
 AUTOCMD                                     *p4cmd-autocdm*

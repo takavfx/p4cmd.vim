@@ -1,18 +1,23 @@
 # p4cmd.vim
 
-Perforce commands support for Vim.
+Perforce (Helix Core) commands support for Vim.
 
 ## Installation
 
-dein.vim
+You have to install [Helix Core Command-Line Client (p4)](https://www.perforce.com/products/helix-core-apps/command-line-client) to use this plugin.
+
+### dein.vim
 
 ```toml
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
 [[plugins]]
 repo = 'takavfx/dailynote.vim'
 depends = 'denops.vim'
 ```
 
-lazyvim
+### lazyvim
 
 ```lua
 return {
